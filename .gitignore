@@ -1,3 +1,17 @@
 .venv
 .env
 **/__pycache__/
+.ipynb_checkpoints/
+
+# Local corpora. sample.jsonl alone is 704 MB; the derived extracts add ~29 MB.
+# Regenerate with the scrape cell in notebooks/clef_unseen_attack_probe.ipynb.
+data/*
+!data/README.md
+
+# Run logs are large and regenerable. The small result artifacts
+# (results/*.json, results/*.pkl) ARE tracked -- they are the experimental record.
+results/*.log
+
+# Superpowers design docs and agent config stay local, per AGENTS.md.
+docs/superpowers/
+AGENTS.md
